@@ -16,3 +16,7 @@ Release
 .vs/
 out/
 Output/
+
+# VSCode folders, as above
+.vscode/
+build/

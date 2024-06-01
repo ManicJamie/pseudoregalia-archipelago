@@ -1,0 +1,563 @@
+# Dungeon
+- name: Dungeon Mirror
+  from:
+  - name: Dungeon Slide
+    requires:
+      - - Wallbreak
+  - name: Dungeon => Castle
+    requires: null
+- name: Dungeon Slide
+  from:
+  - name: Dungeon Mirror
+    requires:
+      - - Wallbreak
+  - name: Dungeon Strong Eyes
+    requires:
+      - - Slide
+  - name: Dungeon Escape Lower
+    requires:
+      - - Wallbreak
+- name: Dungeon Strong Eyes
+  from:
+  - name: Dungeon Slide
+    requires:
+      - - Slide
+  - name: Dungeon => Castle
+    requires:
+      - - Key
+- name: Dungeon Escape Lower
+  from:
+  - name: Dungeon Slide
+    requires:
+      - - Wallbreak
+        - Navigate_Dark
+  - name: Dungeon Escape Upper
+    requires: TODO # Not found anywhere in rules, only in regions?
+  - name: Underbelly => Dungeon
+    requires: null
+- name: Dungeon => Castle
+  from:
+  - name: Dungeon Strong Eyes
+    requires:
+      - - Key
+  - name: Castle Main
+    requires: null
+- name: Dungeon Escape Upper # Todo: what is this
+  from:
+  - name: Dungeon Escape Lower
+    requires:
+      - - Bounce
+      - - Kick.1
+        - Sunsetter
+      - - Kick.3
+      - - HARD # Todo: distinguish type
+        - Gem
+      - - HARD
+        - Kick.2 # Todo: figure out if this requires back-kicks?
+      - - ULTRA
+        - Kick.1
+
+# Underbelly
+- name: Underbelly => Dungeon
+  from:
+  - name: Dungeon Escape Lower
+    requires: null
+  - name: Underbelly Light Pillar
+    requires:
+      - - Bounce
+      - - Kickflip.4
+      - - HARD # Todo: distinguish type
+        - Kick.2
+        - Sunsetter # Todo: Is this supposed to be Kickflip.3?
+      - - LUNATIC # Todo: Check difficulty
+        - ULTRA
+        - Kickflip.2
+  - name: Underbelly Ascendant Light
+    requires: 
+      - - Bounce
+      - - Gem
+      - - Kick.2
+      - - Wind
+        - Kick.1
+      - - HARD
+        - Kickflip.2
+      - - HARD # Todo: what does this refer to?
+        - OBSCURE
+        - Slide
+        - Kick.1
+      - - EXPERT # Todo: combine with above with combined difficulties
+        - Slide
+        - Kick.1
+- name: Underbelly => Keep
+  from:
+  - name: Keep => Underbelly
+    requires: null
+  - name: Underbelly Hole
+    requires:
+      - - Slide # Todo: would this require a floorbreak?
+- name: Underbelly Little Guy
+  from:
+  - name: Tower Remains
+    requires:
+      - - Sunsetter # Todo: check?
+  - name: Underbelly Main Lower
+    requires: null
+
+- name: Underbelly Light Pillar
+  from:
+  - name: Underbelly => Dungeon
+    requires: null
+  - name: Underbelly Ascendant Light
+    requires: null
+  - name: Underbelly Main Upper
+    requires:
+      - - Breaker
+        - Sunsetter
+      - - Breaker # TODO: check
+        - Kicks.2
+      - - Gem
+        - Kicks.2
+        - Sunsetter
+      - - Gem
+        - Kicks.4
+      - - HARD
+        - Gem
+        - Sunsetter
+      - - HARD
+        - Gem
+        - Kicks.3
+- name: Underbelly Ascendant Light
+  from:
+  - name: Underbelly => Dungeon
+    requires:
+      - - Bounce
+      - - Gem
+      - - Kickflip.2
+      - - Kick.1
+        - Wind
+      - - OBSCURE
+        - Breaker
+      - - ULTRA
+        - Kick.1 # Check if difficult ultra
+  - name: Underbelly Light Pillar # TODO: sort out this mess
+    requires:
+      - - Breaker
+        - Sunsetter
+      - - Breaker
+        - Kick.4 # Kickflips?
+      - - HARD
+        - Breaker
+        - Kicks.3
+      - - OBSCURE
+        - Gem
+        - Kick.1 # Kickflips?
+      - - OBSCURE
+        - HARD
+        - Gem
+      - - OBSCURE
+        - HARD
+        - Kick.1
+        - Wind
+      - - EXPERT
+        - Breaker
+        - Kick.2
+      - - EXPERT
+        - Breaker
+        - Kick.1
+        - Gem
+      - - EXPERT
+        - ULTRA
+        - Breaker
+- name: Underbelly Main Upper
+  from:
+  - name: Underbelly Light Pillar
+    requires: null
+  - name: Underbelly Main Lower
+    requires:
+      - - Sunsetter
+        - Kick.2 # Kickflip?
+      - - Sunsetter
+        - Kick.1 # Kickflip?
+        - Gem
+      - - OBSCURE
+        - Gem
+        - Kick.1 # Kickflip?
+      - - EXPERT
+        - Gem
+        - Kickflip.1
+      - - EXPERT
+        - Kick.4
+      - - ULTRA
+        - Gem
+      - - ULTRA # These are in expert, but I'm unsure of the diff variance
+        - Kick.3
+      - - ULTRA
+        - Kick.1
+        - Sunsetter
+      - - ULTRA
+        - Kick.1
+        - Sunsetter
+      - - ULTRA
+        - Kick.1
+        - Breaker
+  - name: Underbelly By Heliacal # TODO: Messy in source, left all but normal
+    requires:
+      - - Breaker
+      - - OBSCURE
+        - Kick.1
+      - - OBSCURE
+        - Gem
+        - Wind
+- name: Underbelly Hole
+  from:
+  - name: Underbelly Main Lower
+    requires:
+      - - Sunsetter
+        - Kick.1 # Kickflip?
+      - - Sunsetter
+        - Wind
+      - - Sunsetter
+        - Wallbreak
+      - - HARD
+        - Sunsetter
+        - Gem
+  - name: Underbelly => Keep
+    requires:
+      - - Sunsetter
+- name: Underbelly By Heliacal
+  from:
+  - name: Underbelly Main Lower
+    requires:
+      - - Slide
+        - Sunsetter
+      - - HARD
+        - OBSCURE
+        - Kick.2 # Kickflip?
+      - - ULTRA
+  - name: Underbelly Main Upper
+    requires:
+      - - Breaker
+        - Bounce
+      - - Breaker
+        - Wind
+        - Kick.3 # Kickflip?
+      - - Breaker
+        - Gem
+        - Kick.2 # Kickflip?
+      - - HARD
+        - Breaker
+        - Gem
+      - - HARD
+        - Breaker
+        - Sunsetter
+        - Kick.3 # Kickflip?
+      - - HARD
+        - Breaker
+        - Wind
+        - Kick.3 # Kickflip?
+- name: Underbelly Main Lower
+  from:
+  - name: Underbelly Main Upper
+    requires: null
+  - name: Underbelly Little Guy
+    requires:
+      - - Gem
+      - - Kickflip
+      - - HARD # Check?
+  - name: Underbelly Hole
+    requires:
+      - - Kick.2
+      - - Gem
+        - Wind
+      - - Wallbreak
+      - - HARD
+        - Kick.1
+      - - HARD
+        - Gem
+      - - ULTRA
+
+
+# Castle Sansa
+- name: Castle Main
+  from:
+  - name: Dungeon => Castle
+    requires: null
+  - name: Castle Spiral Climb
+    requires: null
+  - name: Empty Bailey
+    requires: null
+- name: Castle Spiral Climb
+  from:
+  - name: Castle Main
+    requires:
+      - - Kick.2 # Kickflip? is that on Hard
+      - - HARD
+        - Kickflip.2
+      - - Gem
+        - Sunsetter
+      - - HARD
+        - Wind
+        - Sunsetter
+      - - ULTRA
+  - name: Castle By Scythe Corridor
+    requires:
+      - - Gem
+      - - Kick.4
+        - Sunsetter
+      - - HARD
+        - Kick.3
+- name: Castle High Climb
+  from:
+  - name: Castle Spiral Climb
+    requires:
+      - - Gem
+      - - Kick.3
+        - Sunsetter
+      - - Breaker
+        - Kick.1
+      - - OBSCURE
+        - Sunsetter
+        - Kick.1
+  - name: Castle By Scythe Corridor
+    requires:
+      - - Gem
+      - - Kick.4
+      - - Kick.2
+        - Sunsetter
+      - - Kick.1
+        - Sunsetter
+        - Wind
+      - - HARD
+        - Kick.3
+        - Breaker
+      - - HARD
+        - Kick.1
+        - Sunsetter
+      - - ULTRA
+      - - EXPERT
+        - Kickflip.2
+- name: Castle By Scythe Corridor
+  from:
+  - name: Castle Spiral Climb
+    requires:
+      - - Gem
+      - - EXPERT
+        - Kickflip.4
+      - - LUNATIC
+        - Kick.3
+  - name: Castle => Theatre (Front)
+    requires:
+      - - Gem
+      - - Wind
+        - Kick.1
+      - - Kick.4
+      - - ULTRA
+      - - EXPERT
+        - Kick.3
+- name: Castle => Theatre (Front)
+  from:
+  - name: Castle By Scythe Corridor
+    requires:
+      - - Gem
+        - Kickflip.2
+      - - HARD
+        - Gem
+      - - ULTRA
+        - Kickflip.2
+- name: Castle Moon Room
+  from:
+  - name: Castle => Theatre (Front)
+    requires:
+      - - Gem
+      - - Wind
+        - Kickflip.2
+      - - HARD
+        - Kick.4
+      - - ULTRA
+
+# Keep
+- name: Keep Main
+  from:
+  - name: Castle Main
+    requires: null
+  - name: Keep => Underbelly
+    requires: null
+  - name: Theatre Main
+    requires:
+      - - Gem # TODO: surely there is more
+- name: Keep Locked Room
+  # Note for trackers: This is accessible with nothing but not in logic.
+  # Cutting the platform or hitting the lever make this harder and are irreversible.
+  # On Hard and above, the player is expected to not do either.
+  from:
+  - name: Keep Main
+    requires:
+      - - Key
+      - - Kick.3
+      - - Sunsetter
+        - Kick.1
+      - - Gem
+        - Sunsetter
+      - - Gem
+        - Kick.1
+      - - HARD # Expected to always take the long way around on hard and above.
+- name: Keep Sunsetter
+  from:
+  - name: Keep Main
+    requires:
+      - - Gem
+      - - HARD # As above
+  - name: Keep Locked Room
+    requires: null
+- name: Keep Path To Throne
+  from:
+  - name: Keep Main
+    requires:
+      - - Breaker
+- name: Keep => Underbelly
+  from:
+  - name: Keep Main
+    requires:
+      - - Kickflip.1
+      - - Gem
+      - - ULTRA
+  - name: Underbelly => Keep
+    requires: null
+
+# Library
+- name: Library Main
+  from:
+  - name: Castle Main
+    requires:
+      - - Breaker
+      - - OBSCURE
+        - Wallbreak
+      - - EXPERT # Redundant if OBSCURE is rolled into EXPERT
+        - Wallbreak
+      
+- name: Library Locked
+  from:
+  - name: Library Main
+    requires:
+      - - Key
+- name: Library Greaves
+  from:
+  - name: Library Main
+    requires:
+      - - Slide
+  - name: Library Top
+    requires:
+      - - Gem
+        - Kickflip.1
+      - - Kick.3
+        - Sunsetter
+      - - Kick.3
+        - Bounce # TODO: where is this?
+      - - HARD
+        - Kick.2
+        - Sunsetter
+        - Bounce
+      - - EXPERT
+        - Gem
+      - - EXPERT
+        - Kick.2 # TODO: kickflip?
+      - - LUNATIC
+        - Kick.1
+        - Sunsetter
+        - Bounce # TODO: where?
+- name: Library Top
+  from:
+  - name: Library Main
+    requires:
+      - - Kickflip.4
+      - - OBSCURE
+        - Kick.1
+        - Sunsetter
+      - - HARD
+        - Gem
+      - - HARD
+        - OBSCURE
+        - Kickflip.2
+      - - ULTRA
+  - name: Library Greaves
+    requires:
+      - - Gem
+        - Kick.2
+      - - HARD
+        - Kick.1
+      - - ULTRA # Might need a full-gold filter here
+
+# Theatre
+- name: Theatre Outside Scythe Corridor
+  from:
+  - name: Dungeon Escape Upper
+    requires:
+      - - Bounce
+      - - Kickflip.1
+      - - Gem
+      - - HARD
+        - Wind # Is this really hard?
+      - - ULTRA
+  - name: Keep Main
+    requires:
+      - - Gem
+      - - Kick.1
+      - - Bounce
+      - - Wind
+      - - ULTRA
+- name: Theatre Pillar
+  from:
+  - name: Castle Main
+    requires:
+      - - Gem
+        - Kickflip.1
+      - - Kickflip.2
+      - - HARD
+        - Gem
+      - - HARD
+        - Kickflip.1
+      - - ULTRA
+  - name: Empty Bailey
+    requires: null
+- name: Theatre Main
+  from:
+  - name: Castle => Theatre (Front)
+    requires: null # TODO: check?
+  - name: Theatre Pillar
+    requires:
+      - - Sunsetter # TODO: these should maybe have difficulties?
+        - Cling Gem
+      - - Kick.4
+        - Sunsetter
+
+  - name: Theatre Outside Scythe Corridor
+    requires:
+      - - Gem
+        - Kick.3
+      - - Gem
+        - Wind # TODO: ultra or glidehop? Difficulties?
+
+# Bailey
+- name: Empty Bailey
+  from:
+  - name: Castle Main
+    requires: null
+  - name: Underbelly Little Guy
+    requires: null
+- name: Tower Remains # TODO: rename to "Bailey Bridge" to reflect region properly?
+  from:
+  - name: Empty Bailey
+    requires:
+      - - Gem
+      - - Slide
+        - Sunsetter
+      - - Kick.1 # TODO: difficulties
+
+# Tower TODO: Separate tower internal?
+
+- name: The Great Door
+  from:
+  - name: Tower Remains
+    requires:
+      - - Gem
+        - Kick.3 # TODO: difficulties?

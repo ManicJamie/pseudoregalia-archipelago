@@ -1,0 +1,209 @@
+- name: Dilapidated Dungeon - Dream Breaker
+  region: Dungeon Mirror
+  requires: null
+- name: Dilapidated Dungeon - Slide
+  region: Dungeon Slide
+  requires: null
+- name: Dilapidated Dungeon - Alcove Near Mirror
+  region: Dungeon => Castle
+  requires: null
+- name: Dilapidated Dungeon - Dark Orbs
+  region: Dungeon Escape Upper
+  requires:
+  - TODO
+- name: Dilapidated Dungeon - Past Poles
+  region: Dungeon Strong Eyes
+  requires:
+  - TODO
+- name: Dilapidated Dungeon - Rafters
+  region: Dungeon Strong Eyes
+  requires:
+  - TODO
+- name: Dilapidated Dungeon - Strong Eyes
+  region: Dungeon Strong Eyes
+  requires:
+  - TODO
+- name: Castle Sansa - Indignation
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Alcove Near Dungeon
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Balcony
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Corner Corridor
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Floater In Courtyard
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Locked Door
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Platform In Main Halls
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Tall Room Near Wheel Crawlers
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - Wheel Crawlers
+  region: Castle Main
+  requires:
+  - TODO
+- name: Castle Sansa - High Climb From Courtyard
+  region: Castle High Climb
+  requires:
+  - TODO
+- name: Castle Sansa - Alcove Near Scythe Corridor
+  region: Castle By Scythe Corridor
+  requires:
+  - TODO
+- name: Castle Sansa - Near Theatre Front
+  region: Castle Moon Room
+  requires:
+  - TODO
+- name: Sansa Keep - Strikebreak
+  region: Keep Main
+  requires:
+  - TODO
+- name: Sansa Keep - Alcove Near Locked Door
+  region: Keep Locked Room
+  requires:
+  - TODO
+- name: Sansa Keep - Levers Room
+  region: Keep Main
+  requires:
+  - TODO
+- name: Sansa Keep - Lonely Throne
+  region: Keep Path To Throne
+  requires:
+  - TODO
+- name: Sansa Keep - Near Theatre
+  region: Keep Main
+  requires:
+  - TODO
+- name: Sansa Keep - Sunsetter
+  region: Keep Sunsetter
+  requires:
+  - TODO
+- name: Listless Library - Sun Greaves
+  region: Library Greaves
+  requires:
+  - TODO
+- name: Listless Library - Upper Back
+  region: Library Top
+  requires:
+  - TODO
+- name: Listless Library - Locked Door Across
+  region: Library Locked
+  requires:
+  - TODO
+- name: Listless Library - Locked Door Left
+  region: Library Locked
+  requires:
+  - TODO
+- name: Twilight Theatre - Soul Cutter
+  region: Theatre Main
+  requires:
+  - TODO
+- name: Twilight Theatre - Back Of Auditorium
+  region: Theatre Main
+  requires:
+  - TODO
+- name: Twilight Theatre - Center Stage
+  region: Theatre Main
+  requires:
+  - TODO
+- name: Twilight Theatre - Locked Door
+  region: Theatre Main
+  requires:
+  - TODO
+- name: Twilight Theatre - Murderous Goat
+  region: Theatre Main
+  requires:
+  - TODO
+- name: Twilight Theatre - Corner Beam
+  region: Theatre Pillar
+  requires:
+  - TODO
+- name: Empty Bailey - Solar Wind
+  region: Empty Bailey
+  requires:
+  - TODO
+- name: Empty Bailey - Center Steeple
+  region: Empty Bailey
+  requires:
+  - TODO
+- name: Empty Bailey - Cheese Bell
+  region: Empty Bailey
+  requires:
+  - TODO
+- name: Empty Bailey - Guarded Hand
+  region: Empty Bailey
+  requires:
+  - TODO
+- name: Empty Bailey - Inside Building
+  region: Empty Bailey
+  requires:
+  - TODO
+- name: The Underbelly - Ascendant Light
+  region: Underbelly Ascendant Light
+  requires:
+  - TODO
+- name: The Underbelly - Alcove Near Light
+  region: Underbelly Light Pillar
+  requires:
+  - TODO
+- name: The Underbelly - Building Near Little Guy
+  region: Underbelly Little Guy
+  requires:
+  - TODO
+- name: The Underbelly - Locked Door
+  region: Underbelly By Heliacal
+  requires:
+  - TODO
+- name: The Underbelly - Main Room
+  region: Underbelly Main Upper
+  requires:
+  - TODO
+- name: The Underbelly - Rafters Near Keep
+  region: Underbelly => Keep
+  requires:
+  - TODO
+- name: The Underbelly - Strikebreak Wall
+  region: Underbelly Main Upper
+  requires:
+  - TODO
+- name: The Underbelly - Surrounded By Holes
+  region: Underbelly Hole
+  requires:
+  - TODO
+- name: Tower Remains - Cling Gem
+  region: Tower Remains
+  requires:
+  - TODO
+- name: Tower Remains - Atop The Tower
+  region: The Great Door
+  requires:
+  - TODO
+- name: Listless Library - Sun Greaves 1
+  region: Library Greaves
+  requires:
+  - TODO
+- name: Listless Library - Sun Greaves 2
+  region: Library Greaves
+  requires:
+  - TODO
+- name: Listless Library - Sun Greaves 3
+  region: Library Greaves
+  requires:
+  - TODO
